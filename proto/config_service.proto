@@ -1,0 +1,32 @@
+syntax = "proto3"; //tell this is proto file for compiler
+
+package config; // package name of proto file if the is multiple proto
+
+option go_package = "/grpc; config";
+
+
+
+message Empty{}
+
+message ServiceInfo{
+    string id =1;
+    string name = 2;
+    string ServiceCode =3;
+}
+
+message ServiceLists {
+    repeated  ServiceInfo services =1;
+
+}
+service ConfigService {
+    rpc GetServiceList(Empty) returns (ServiceLists);
+    rpc GetServiceDetail(ServiceDetailRequest) returns (ServiceDetialResponse);
+}
+
+message ServiceDetailRequest{
+    string id =1;
+}
+
+message ServiceDetialResponse{
+    ServiceInfo   service =1;
+}
