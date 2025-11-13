@@ -1,7 +1,7 @@
 package service
 
 import (
-	// GRPCInterface "GRPCX/grpc"
+	// GRPCInterface "github.com/eyobmamo/go_grpc_implimantation-/grpc"
 	"context"
 )
 

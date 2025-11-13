@@ -1,4 +1,4 @@
-module GRPCX
+module github.com/eyobmamo/go_grpc_implimantation-
 
 go 1.25.0
 

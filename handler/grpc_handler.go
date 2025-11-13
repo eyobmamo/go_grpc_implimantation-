@@ -1,9 +1,9 @@
 package handler
 
 import (
-	GRPCInterface "GRPCX/grpc"
-	ConfigService "GRPCX/service"
 	"context"
+	GRPCInterface "github.com/eyobmamo/go_grpc_implimantation-/grpc"
+	ConfigService "github.com/eyobmamo/go_grpc_implimantation-/service"
 	// "strings"
 )
 

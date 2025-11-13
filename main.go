@@ -1,10 +1,10 @@
 package main
 
 import (
-	generated "GRPCX/grpc"
-	"GRPCX/handler"
-	"GRPCX/service"
 	"context"
+	generated "github.com/eyobmamo/go_grpc_implimantation-/grpc"
+	"github.com/eyobmamo/go_grpc_implimantation-/handler"
+	"github.com/eyobmamo/go_grpc_implimantation-/service"
 	"log"
 	"net"
 
